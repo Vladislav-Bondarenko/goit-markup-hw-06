@@ -224,7 +224,7 @@ ul {
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .section-hero {
+  .section-one {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -244,16 +244,17 @@ ul {
     padding-top: 112px;
     padding-bottom: 112px;
   }
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .section-hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url('../hero/herotab_@2x.jpg');
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-one {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../hero/herotab_@2x.jpg');
+    }
   }
 }
 
@@ -268,16 +269,17 @@ ul {
     padding-top: 188px;
     padding-bottom: 188px;
   }
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .section-hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url('../hero/heroPK_@2x.jpg');
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-one {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../hero/heroPK_@2x.jpg');
+    }
   }
 }
 
@@ -783,10 +785,6 @@ ul {
   flex-direction: column;
   display: flex;
   align-items: baseline;
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 100%;
   gap: 72px;
   align-items: center;
 }
@@ -803,8 +801,8 @@ ul {
 
 @media screen and (min-width: 1158px) {
   .container-footer {
-    gap: 80px;
-    padding: 0;
+    gap: 0px;
+    padding: 0 15px;
     flex-wrap: nowrap;
   }
 }
@@ -822,11 +820,9 @@ ul {
 @media screen and (min-width: 768px) {
   .logo-text-div {
     align-items: flex-start;
-    width: calc(50% - 12px);
   }
   .logo-social-media {
     align-items: flex-start;
-    width: calc(50% - 12px);
     text-align: left;
     align-self: flex-start;
   }
@@ -839,11 +835,11 @@ ul {
 @media screen and (min-width: 1158px) {
   .logo-text-div {
     align-items: flex-start;
-    width: calc(30% - 40px);
+    width: 264px;
+    margin-right: 120px;
   }
   .logo-social-media {
     align-items: flex-start;
-    width: calc(23% - 40px);
     text-align: left;
     align-self: flex-start;
   }
@@ -861,7 +857,6 @@ ul {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
 }
 
 .subscribe-p {
@@ -882,14 +877,10 @@ ul {
   width: 100%;
 }
 
-.label-email {
-  width: 100%;
-}
-
 .footer-input {
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 100%;
+  width: 288px;
   height: 40px;
   font-family: 'Roboto', sans-serif;
   background-color: transparent;
@@ -899,6 +890,12 @@ ul {
   padding-left: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-input {
+    width: 264px;
+  }
 }
 
 .footer-button {
@@ -944,16 +941,13 @@ ul {
   .form-footer {
     flex-direction: row;
   }
-  .label-email {
-    width: calc(50% - 12px);
-  }
 }
 
 @media screen and (min-width: 1158px) {
   .subscribe {
     align-items: flex-start;
-    width: calc(47% - 40px);
     align-self: flex-start;
+    margin-left: auto;
   }
   .label-email {
     width: 100%;
@@ -988,6 +982,7 @@ ul {
   top: 50%;
   left: 50%;
   width: 90%;
+  max-width: 408px;
   min-height: 584px;
   border-radius: 4px;
 
@@ -1298,8 +1293,6 @@ input[type='checkbox']:checked + label .checkbox-span {
   justify-content: flex-start;
   flex-direction: column;
   gap: 40px;
-  width: 151px;
-  height: 200px;
 }
 
 .mob-span {
@@ -1328,8 +1321,6 @@ input[type='checkbox']:checked + label .checkbox-span {
   justify-content: flex-start;
   flex-direction: column;
   gap: 24px;
-  width: 193px;
-  height: 72px;
 }
 
 .address-li-a {
